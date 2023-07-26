@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'microapp-monorepo-shopping',
+  displayName: 'shopping',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/microapp-monorepo-shopping',
+  coverageDirectory: '../../coverage/apps/shopping',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
