@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
 })
-export class ProductComponent {}
+export class ProductComponent {
+  addedToCart = false;
+}

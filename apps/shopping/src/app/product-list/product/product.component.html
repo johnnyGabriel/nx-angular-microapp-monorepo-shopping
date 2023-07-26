@@ -2,5 +2,10 @@
 <p>Tenis de corrida para uso casual</p>
 <span>R$ 899,99</span>
 <div>
-    <button>Adicionar no carrinho</button>
+    <ng-container *ngIf="addedToCart; else buttonAddCart">
+        <p>Produto adicionado!</p>
+    </ng-container>
+    <ng-template #buttonAddCart>
+        <button (click)="addedToCart=true">Adicionar no carrinho</button>
+    </ng-template>
 </div>
