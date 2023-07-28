@@ -10,7 +10,7 @@ export class ProductService {
 
   getById(id: number) {
 
-    if (this.products[id]) {
+    if (!this.products[id]) {
       this.loadProduct(id);
     }
 
