@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@microapp-monorepo-shopping/cart": ["libs/cart/src/index.ts"]
+      "@microapp-monorepo-shopping/cart": ["libs/cart/src/index.ts"],
+      "@microapp-monorepo-shopping/product": ["libs/product/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
