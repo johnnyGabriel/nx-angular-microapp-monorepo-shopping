@@ -1,11 +1,11 @@
-<h3>Tenis Nike Air Jordan</h3>
-<p>Tenis de corrida para uso casual</p>
-<span>R$ 899,99</span>
+<h3>{{ name }}</h3>
+<p>{{ desc }}</p>
+<span>{{ price | currency }}</span>
 <div>
     <ng-container *ngIf="addedToCart; else buttonAddCart">
         <p>Produto adicionado!</p>
     </ng-container>
     <ng-template #buttonAddCart>
-        <button (click)="addedToCart=true">Adicionar no carrinho</button>
+        <button (click)="handleAddToCart()">Adicionar no carrinho</button>
     </ng-template>
 </div>

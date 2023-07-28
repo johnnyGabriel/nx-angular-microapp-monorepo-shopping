@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'shopping-product',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.css'],
 })
 export class ProductComponent {
+
+  @Input() name?: string;
+  @Input() desc?: string;
+  @Input() price?: number;
+
+  @Output() add = new EventEmitter();
+  
   addedToCart = false;
+
+  handleAddToCart() {
+    this.addedToCart = true;
+    this.add.emit();
+  }
+
 }
