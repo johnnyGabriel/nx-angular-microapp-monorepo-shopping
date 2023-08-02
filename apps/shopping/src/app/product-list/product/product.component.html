@@ -1,11 +1,13 @@
-<h3>{{ name }}</h3>
-<p>{{ desc }}</p>
-<span>{{ price | currency }}</span>
-<div>
-    <ng-container *ngIf="addedToCart; else buttonAddCart">
-        <p>Produto adicionado!</p>
-    </ng-container>
-    <ng-template #buttonAddCart>
-        <button (click)="handleAddToCart()">Adicionar no carrinho</button>
-    </ng-template>
-</div>
+<ng-container *ngIf="name">
+    <h3>{{ name }}</h3>
+    <p>{{ desc }}</p>
+    <span>{{ price | currency }}</span>
+    <div>
+        <ng-container *ngIf="addedToCart; else buttonAddCart">
+            <p>Produto adicionado!</p>
+        </ng-container>
+        <ng-template #buttonAddCart>
+            <button (click)="handleAddToCart()">Adicionar no carrinho</button>
+        </ng-template>
+    </div>
+</ng-container>

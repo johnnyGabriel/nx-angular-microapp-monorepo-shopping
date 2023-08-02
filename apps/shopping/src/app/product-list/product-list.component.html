@@ -1,6 +1,10 @@
-<section>
-    <shopping-product></shopping-product>
-    <shopping-product></shopping-product>
-    <shopping-product></shopping-product>
-    <shopping-product></shopping-product>
+<section *ngIf="products$ | async as products">
+    <ng-container *ngFor="let product$ of products">
+        <shopping-product
+            *ngIf="product$ | async as p"
+            [name]="p.name"
+            [desc]="p.description"
+            [price]="p.price"
+            (add)="handleAddToCart(p.id)"></shopping-product>
+    </ng-container>
 </section>
