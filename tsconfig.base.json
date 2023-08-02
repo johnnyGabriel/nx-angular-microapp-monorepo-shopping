@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@microapp-monorepo-shopping/cart": ["libs/cart/src/index.ts"],
+      "@microapp-monorepo-shopping/data": ["libs/data/src/index.ts"],
       "@microapp-monorepo-shopping/product": ["libs/product/src/index.ts"]
     }
   },

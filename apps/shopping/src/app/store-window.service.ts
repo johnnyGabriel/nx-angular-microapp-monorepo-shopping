@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProductService } from '@microapp-monorepo-shopping/product';
+import { ProductService } from '@microapp-monorepo-shopping/data';
 import { of } from 'rxjs';
 
 @Injectable({

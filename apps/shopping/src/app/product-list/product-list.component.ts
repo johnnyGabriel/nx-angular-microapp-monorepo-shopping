@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { StoreWindowService } from '../store-window.service';
-import { CartService } from '@microapp-monorepo-shopping/cart';
+import { CartService } from '@microapp-monorepo-shopping/data';
 
 @Component({
   selector: 'shopping-product-list',
