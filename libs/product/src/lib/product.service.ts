@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product.interface';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class ProductService {
       this.loadProduct(id);
     }
 
-    return this.products[id];
+    return of(this.products[id]);
   }
 
   private loadProduct(id: number): void {
