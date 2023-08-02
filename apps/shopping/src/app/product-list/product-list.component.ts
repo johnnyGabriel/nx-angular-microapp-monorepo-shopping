@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StoreWindowService } from '../store-window.service';
+import { CartService } from '@microapp-monorepo-shopping/cart';
 
 @Component({
   selector: 'shopping-product-list',
@@ -10,10 +11,10 @@ export class ProductListComponent {
 
   products$ = this.storeWindow.get();
 
-  constructor(private storeWindow: StoreWindowService) {}
+  constructor(private storeWindow: StoreWindowService, private cartService: CartService) {}
   
   handleAddToCart(productId: number) {
-    console.log(`product ${productId} added to cart`);
+    this.cartService.add(productId);
   }
   
 }
