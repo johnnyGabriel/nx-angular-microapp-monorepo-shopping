@@ -1,1 +1,7 @@
-{{ cart$ | async }}
+<ng-container *ngIf="cart$ | async as cart">
+    <ng-container *ngFor="let product of cart | keyvalue">
+        <h3>{{ product.value.name }}</h3>
+        <span>{{ product.value.price | currency }}</span>
+        Quantity: <span>{{ product.value.qtt }}</span>
+    </ng-container>
+</ng-container>
