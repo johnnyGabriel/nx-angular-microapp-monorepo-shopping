@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "name": "Tenis Nike Air Jordan",
+        "description": "Tenis de corrida para uso casual",
+        "price": 899.99
+    },
+    {
+        "id": 1,
+        "name": "Tenis Adidas",
+        "description": "Tenis de corrida para uso casual",
+        "price": 510.99
+    },
+    {
+        "id": 2,
+        "name": "Tenis Nike Abc",
+        "description": "Tenis de corrida para uso casual",
+        "price": 89.99
+    },
+    {
+        "id": 3,
+        "name": "Tenis Olympikus",
+        "description": "Tenis de corrida para uso casual",
+        "price": 399.99
+    },
+    {
+        "id": 4,
+        "name": "Tenis Adidas Abc",
+        "description": "Tenis de corrida para uso casual",
+        "price": 199.99
+    },
+    {
+        "id": 5,
+        "name": "Tenis Nike Air",
+        "description": "Tenis de corrida para uso casual",
+        "price": 699.99
+    },
+    {
+        "id": 6,
+        "name": "Tenis Adidas Xyz",
+        "description": "Tenis de corrida para uso casual",
+        "price": 899.99
+    },
+    {
+        "id": 7,
+        "name": "Tenis Nike Xyz",
+        "description": "Tenis de corrida para uso casual",
+        "price": 1099.99
+    },
+    {
+        "id": 8,
+        "name": "Tenis Olympikus Abc",
+        "description": "Tenis de corrida para uso casual",
+        "price": 399.99
+    },
+    {
+        "id": 9,
+        "name": "Tenis Olympikus Xyz",
+        "description": "Tenis de corrida para uso casual",
+        "price": 499.99
+    }
+]
