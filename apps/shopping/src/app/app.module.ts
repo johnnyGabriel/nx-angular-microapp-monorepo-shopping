@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { ProductListModule } from './product-list/product-list.module';
+import { DataModule } from '@microapp-monorepo-shopping/data';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ProductListModule } from './product-list/product-list.module';
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     ProductListModule,
+    DataModule
   ],
   providers: [],
   bootstrap: [AppComponent],

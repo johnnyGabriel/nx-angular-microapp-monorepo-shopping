@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { DataModule } from '@microapp-monorepo-shopping/data';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
       ],
       { initialNavigation: 'enabledBlocking' }
     ),
+    DataModule
   ],
   providers: [],
   bootstrap: [AppComponent],
