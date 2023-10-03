@@ -4,9 +4,7 @@ import { ProductService } from './product.service';
 import { Product } from './product.interface';
 import { CartItems } from './cart.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CartService {
 
   private cartSubject = new BehaviorSubject<CartItems>([]);

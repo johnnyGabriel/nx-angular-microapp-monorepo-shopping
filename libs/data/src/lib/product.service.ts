@@ -3,9 +3,7 @@ import { Product } from './product.interface';
 import { of } from 'rxjs';
 import *  as productsMock  from './product.mock.json';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProductService {
 
   private products: { [key: number]: Product } = {};
